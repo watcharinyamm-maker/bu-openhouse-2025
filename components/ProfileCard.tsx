@@ -67,7 +67,7 @@ const ProfileCard: React.FC = () => {
                     {/* Profile Section */}
                     <div className="mb-4">
                         {/* Avatar */}
-                        <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto mb-3 relative">
+                        <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto mb-2 relative">
                             <div className="w-full h-full bg-gradient-to-br from-blue-400 to-purple-600 rounded-full flex items-center justify-center text-white text-xl sm:text-2xl font-bold shadow-xl">
                                 PIC
                             </div>
@@ -78,7 +78,7 @@ const ProfileCard: React.FC = () => {
                         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2">
                             Name Surname
                         </h1>
-                        <div className="inline-block px-4 py-2 bg-blue-500/20 backdrop-blur-sm rounded-full text-blue-200 text-sm sm:text-base border border-blue-400/30 mb-3">
+                        <div className="inline-block px-4 py-2 bg-blue-500/20 backdrop-blur-sm rounded-full text-blue-200 text-sm sm:text-base border border-blue-400/30  mb-1">
                             Your Role
                         </div>
 
