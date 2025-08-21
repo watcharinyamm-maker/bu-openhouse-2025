@@ -1,6 +1,5 @@
 'use client';
 
-import Mark from '@/etc/mark';
 import React from 'react';
 
 const ProfileCard: React.FC = () => {
@@ -50,7 +49,7 @@ const ProfileCard: React.FC = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-4">
+        <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-4">
             {/* Background Effects */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute -inset-10 opacity-30">
@@ -137,13 +136,22 @@ const ProfileCard: React.FC = () => {
 
                     {/* Start Chatting Button */}
                     <div className="pt-4 border-t border-white/20 max-w-xl w-full">
-                        <button className="inline-block px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 backdrop-blur-sm rounded-full text-white font-semibold text-sm sm:text-base border border-blue-400/50 hover:border-purple-400/50 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl">
+                        <a 
+                            href="/chat"
+                            className="inline-block px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 backdrop-blur-sm rounded-full text-white font-semibold text-sm sm:text-base border border-blue-400/50 hover:border-purple-400/50 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl"
+                        >
                             Start Chatting
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
-            <Mark />
+            
+            {/* Mark component directly embedded */}
+            <div className="absolute bottom-0 left-0 right-0 py-4 z-[60]">
+                <p className="text-center text-sm text-white opacity-90 bg-black/20 rounded-lg mx-4 py-2">
+                    <a href="https://peamz4.in.th" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">peamz4</a> X BU OPENHOUSE 2025
+                </p>
+            </div>
         </div>
     );
 };
