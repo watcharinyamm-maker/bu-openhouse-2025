@@ -75,7 +75,7 @@ export default function ChatPage() {
         <h1 className="text-white font-bold text-lg text-center"> AI Assistant 💬 </h1>
       </header>
 
-      <div ref={chatRef} className="relative z-10 flex-1 overflow-y-auto p-4 space-y-3">
+      <div ref={chatRef} className="relative z-10 flex-1 overflow-y-auto p-4 pb-24 space-y-3">
         {messages.map((m, i) => (
           <div key={i} className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}>
             <div
@@ -92,8 +92,9 @@ export default function ChatPage() {
         {loading && <div className="text-sm text-blue-200 ml-4">กำลังพิมพ์...</div>}
       </div>
 
-      <div className="relative z-10 p-4 bg-white/10 backdrop-blur-sm border-t border-white/20">
-        <div className="flex gap-3">
+      {/* Fixed chat input bar at bottom */}
+      <div className="fixed bottom-0 left-0 right-0 z-20 p-4 bg-white/10 backdrop-blur-md border-t border-white/20">
+        <div className="flex gap-3 max-w-4xl mx-auto">
           <input
             value={input}
             onChange={e => setInput(e.target.value)}

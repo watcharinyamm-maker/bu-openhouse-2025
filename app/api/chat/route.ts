@@ -9,8 +9,7 @@ const userData = {
   fullName: "",
   role: "",
   skills: [
-    "React", "Next.js", "TypeScript", "Node.js", "Python", 
-    "Azure", "Docker", "Tailwind CSS", "PostgreSQL", "MongoDB"
+    " ", " ", " ", " ", " ", 
   ],
   education: [
     {
@@ -87,7 +86,7 @@ export async function POST(req: NextRequest) {
 
     if (!apiKey) {
       return new Response(
-        JSON.stringify({ content: "⚠️ ไม่มี API Key (MOCK MODE)" }),
+        JSON.stringify({ content: "⚠️ ไม่มี API Key" }),
         { status: 200 }
       );
     }
@@ -110,9 +109,9 @@ export async function POST(req: NextRequest) {
               {
                 text: `${systemPrompt}
 
-USER MESSAGE: ${userMsg}
+                USER MESSAGE: ${userMsg}
 
-Please respond as AI assistant using the information provided above.`,
+                Please respond as AI assistant using the information provided above.`,
               },
             ],
           },
