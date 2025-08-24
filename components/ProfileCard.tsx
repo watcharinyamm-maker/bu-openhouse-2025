@@ -2,6 +2,7 @@
 
 import React from 'react';
 
+
 const ProfileCard: React.FC = () => {
 
     const socialLinks = [
@@ -16,36 +17,7 @@ const ProfileCard: React.FC = () => {
             ),
             color: 'text-red-400 hover:text-red-300'
         },
-        {
-            name: 'GitHub',
-            href: 'https://github.com/alexjohnson',
-            icon: (
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clipRule="evenodd" />
-                </svg>
-            ),
-            color: 'text-gray-400 hover:text-gray-300'
-        },
-        {
-            name: 'LinkedIn',
-            href: 'https://linkedin.com/in/alexjohnson',
-            icon: (
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M18.364 3.636C16.455 1.727 13.909 0.64 11.182 0.64c-5.423 0-9.818 4.395-9.818 9.818 0 2.727 1.087 5.273 2.996 7.182L18.364 3.636zM2.636 18.364C4.545 20.273 7.091 21.36 9.818 21.36c5.423 0 9.818-4.395 9.818-9.818 0-2.727-1.087-5.273-2.996-7.182L2.636 18.364z" />
-                </svg>
-            ),
-            color: 'text-blue-400 hover:text-blue-300'
-        },
-        {
-            name: 'Twitter',
-            href: 'https://twitter.com/alexjohnson',
-            icon: (
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
-                </svg>
-            ),
-            color: 'text-sky-400 hover:text-sky-300'
-        }
+        //TODO: Add more social links here
     ];
 
     return (
@@ -66,14 +38,16 @@ const ProfileCard: React.FC = () => {
                     {/* Profile Section */}
                     <div className="mb-4">
                         {/* Avatar */}
-                        <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto mb-2 relative">
+                        <div className="w-36 h-36 mx-auto mb-2 relative">
+                            {/* //TODO: Replace with actual profile picture */}
                             <div className="w-full h-full bg-gradient-to-br from-blue-400 to-purple-600 rounded-full flex items-center justify-center text-white text-xl sm:text-2xl font-bold shadow-xl">
                                 PIC
-                            </div>
+                            </div>                            
                             <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-600 rounded-full animate-ping opacity-20"></div>
                         </div>
 
                         {/* Name and Title */}
+                        {/* //TODO: Replace with actual name and title */}
                         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2">
                             Name Surname
                         </h1>
@@ -82,6 +56,7 @@ const ProfileCard: React.FC = () => {
                         </div>
 
                         {/* Contact Information */}
+                        {/* //TODO: Replace with actual contact information */}
                         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center">
                             <div className="flex items-center space-x-2">
                                 <div className="w-8 h-8 bg-blue-500/20 rounded-full flex items-center justify-center">
@@ -109,6 +84,7 @@ const ProfileCard: React.FC = () => {
                     </div>
 
                     {/* About Section */}
+                    {/* //TODO: Replace with actual bio */}
                     <div className="max-w-xl mb-2">
                         <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
                             Your brief bio goes here. Share a bit about yourself, your interests, and what you do. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, voluptatibus dignissimos nobis libero similique reiciendis animi, nisi nihil soluta praesentium,.
@@ -116,6 +92,7 @@ const ProfileCard: React.FC = () => {
                     </div>
 
                     {/* Social Links */}
+                    {/* //TODO: Add more social links here */}
                     <div className="space-y-2 mb-4">
                         <h3 className="text-lg font-semibold text-white">Connect With Me</h3>
                         <div className="flex justify-center space-x-3">
@@ -136,7 +113,7 @@ const ProfileCard: React.FC = () => {
 
                     {/* Start Chatting Button */}
                     <div className="pt-4 border-t border-white/20 max-w-xl w-full">
-                        <a 
+                        <a
                             href="/chat"
                             className="inline-block px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 backdrop-blur-sm rounded-full text-white font-semibold text-sm sm:text-base border border-blue-400/50 hover:border-purple-400/50 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl"
                         >
@@ -145,7 +122,7 @@ const ProfileCard: React.FC = () => {
                     </div>
                 </div>
             </div>
-            
+
             {/* Mark component directly embedded */}
             <div className="absolute bottom-0 left-0 right-0 py-4 z-[60]">
                 <p className="text-center text-sm text-white opacity-90 bg-black/20 rounded-lg mx-4 py-2">
