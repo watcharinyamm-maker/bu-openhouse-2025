@@ -5,22 +5,22 @@ type Msg = { role: "user" | "assistant"; content: string };
 
 // User data for personalized responses
 const userData = {
-  name: "",
-  fullName: "",
-  role: "",
+  name: 'Jin',
+  fullName: "วัชรินทร์ แย้มมนัส",
+  role: "นักแข่งวาโร",
   skills: [
     " ", " ", " ", " ", " ", 
   ],
   education: [
     {
-      school: " ",
+      school: "Sbac",
       degree: " ",
       period: " ",
       description: " "
     },
   ],
   location: "Thailand",
-  interests: [" ", " ", " ", " "],
+  interests: ["hj", " ", " ", " "],
   projects: [
     " ",
     " ",
